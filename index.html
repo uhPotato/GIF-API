@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Week 6 - GifTastic</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Gif">
+
+
+	<!-- reset stylesheet not needed because using bootstrap -->
+	<!-- <link rel="stylesheet" type="text/css" href="/assets/css/reset.css"> -->
+	
+	<!-- Bootstrap section -->
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	
+	<!-- Make final css adjustments with personal stylesheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+		<!-- Two columns - left one has buttons, right one has gifs -->
+		<div class="row">
+			<div class="col-md-3 btn-group-vertical" role="group" id="buttonsBar">buttonsBar</div>
+			<div class="col-md-9">
+				<div class="row" id="gifsWindow"></div>
+			</div>
+		</div>
+
+
+		<!--Use bootstrap form group for input-->
+		<div>
+			<form class="input-stuff" id="gifForm">
+			  <div class="form-group">
+					<input type="text" class="form-control" id="gifInput" placeholder="Add another GIF option">
+			  </div>
+			  <button type="submit" id="addGif" class="btn">Submit</button>
+			</form>
+	  </div>
+
+	<!-- end the bootstrap container -->
+	</div>
+
+    <div id="gifDisplay">
+
+    </div>
+	
+	<!-- add link to the jQuery Library -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Link to the game javascript -->
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
